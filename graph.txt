@@ -1,0 +1,33 @@
+  
+  Graph Visualization:
+    A  __ B                  We can assume A is Abigael, B is Brayo, and C is Caro
+      \
+        C              
+
+Adjacency Matrix:                          "1" in the matrix  indicates a romantic relationship,
+
+ | Abigail  Brayo  Caro                    and "0" means no romantic involvement.
+   ------------------------          
+  Abigail | 0        1      0
+    Brayo | 1        0      1
+    Caro  | 0        1      0
+
+ 
+ Adjacency Lists:
+
+    Abigail: Brayo
+   Brayo:   Abigail, Caro
+   Caro:    Brayo
+  
+Pseudocode for creating a graph  
+# Create a graph
+myGraph = Graph()
+
+# Add nodes
+nodeA = myGraph.addNode("Abigail")
+nodeB = myGraph.addNode("Brayo")
+nodeC = myGraph.addNode("Caro")
+
+# Add edges
+myGraph.addEdge(nodeA, nodeB)  # Add node Abigail to node Brayo
+myGraph.addEdge(nodeB, nodeC)  #  Add node Brayo to node  Caro
